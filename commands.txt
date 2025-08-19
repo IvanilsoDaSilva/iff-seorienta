@@ -1,0 +1,32 @@
+# Criar pasta do projeto
+	[CMD] mkdir nome_projeto
+	[CMD] cd nome_projeto
+
+# Criar ambiente virtual Python
+	[CMD] python -m venv venv 								# Cria o ambiente virtual Python
+	[FIL] .\venv\Scripts\activate 							# Ativa o ambiente virtual Python (Importante para instalar as dependencias no ambiente certo)
+
+# Configuração inicial Django
+	[CMD] python -m pip install Django 						# Instala o framework Django;
+	[CMD] django-admin startproject core .			# Configura as pastas iniciais do framework
+
+# CLI Django
+	[CMD] python manage.py runserver						# Inicia a aplicação
+	[CMD] python manage.py startapp nome_app				# Cria um novo app (Subdivisão do Django) Ex. de apps: home, autenticação, feed, menssager
+
+# Gerenciar dependencias Python (requirements.txt)
+	[CMD] pip install nome_do_pacote						# Instala novo pacote de dependencia
+	[CMD] pip freeze > requirements.txt						# Salva todas dependencias do projeto no arquivo 'requirements.txt'
+	[CMD] pip install -r requirements.txt					# Instala todas dependencias do projeto atraves do 'requirements.txt'
+
+# Outros
+	Noções básicas de arquitetura MVC, MVT e Desenvolvimento WEB (Arquitetura Cliente Servidor)
+	[FIL] .\manage.py										# Arquivo responsavel pelo Command Line Interface do Django
+	[FIL] .\core\settings.py 						# Arquivo de configuração (Modo debug, database, linguagem = 'pt-BR', time-zone = 'America/Sao_Paulo' e etc.)
+	[FIL] .\nome_app\models.py								# M da arquitetura 'Model, View, Templates'
+	[FIL] .\nome_app\views.py								# V da arquitetura 'Model, View, Templates'
+
+# Conhecimentos
+	Arquitetura 'Models, Views e Controller' e 'Models, Views e Templates'
+	Arquitetura Cliente e Servidor/Requisição e Resposta
+	Desenvolvimento WEB

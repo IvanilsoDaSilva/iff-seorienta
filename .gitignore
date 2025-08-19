@@ -1,0 +1,49 @@
+# Ambiente virtual
+venv/
+
+# Arquivos do Python
+*.pyc
+*.pyo
+__pycache__/
+*.so
+
+# Banco de dados SQLite
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de configuração local
+*.env
+*.log
+*.pot
+*.tmp
+*.bak
+
+# Arquivos do Django
+media/
+staticfiles/
+*.mo
+
+# Migrações compiladas
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Testes / coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
