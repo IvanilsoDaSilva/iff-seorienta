@@ -79,6 +79,16 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
+📌 APLIQUE AS MIGRAÇÕES NO BANCO DE DADOS
+```cmd
+python manage.py migrate
+```
+
+📌 CRIE UM SUPERUSUÁRIO PARA O ADMIN DO DJANGO
+```cmd
+python manage.py createsuperuser
+```
+
 📌 INICIE A APLICAÇÃO
 ```cmd
 python manage.py runserver

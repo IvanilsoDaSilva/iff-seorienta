@@ -13,6 +13,8 @@
 # CLI Django
 	[CMD] python manage.py runserver						# Inicia a aplicação
 	[CMD] python manage.py startapp nome_app				# Cria um novo app (Subdivisão do Django) Ex. de apps: home, autenticação, feed, menssager
+	[CMD] python manage.py migrate							# Aplica as migrações do banco de dados, criando ou atualizando tabelas conforme definido nos models.
+	[CMD] python manage.py createsuperuser					# Cria um superusuário para acessar o admin do Django.
 
 # Gerenciar dependencias Python (requirements.txt)
 	[CMD] pip install nome_do_pacote						# Instala novo pacote de dependencia
