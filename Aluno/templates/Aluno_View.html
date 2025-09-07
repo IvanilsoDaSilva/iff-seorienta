@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Professores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        .professor-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .professor-info {
+            flex-grow: 1;
+        }
+        .professor-info h3 {
+            margin: 0 0 5px 0;
+            color: #555;
+        }
+        .professor-info p {
+            margin: 0;
+            color: #777;
+        }
+        .specialty {
+            font-style: italic;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lista de Professores e Especialidades</h1>
+
+        <div class="professor-card">
+            <div class="professor-info">
+                <h3>Prof. João Silva</h3>
+                <p>Especialidade: <span class="specialty">Engenharia de Software</span></p>
+            </div>
+        </div>
+
+        <div class="professor-card">
+            <div class="professor-info">
+                <h3>Profa. Maria Oliveira</h3>
+                <p>Especialidade: <span class="specialty">Inteligência Artificial</span></p>
+            </div>
+        </div>
+
+        <div class="professor-card">
+            <div class="professor-info">
+                <h3>Prof. Pedro Costa</h3>
+                <p>Especialidade: <span class="specialty">Ciência de Dados</span></p>
+            </div>
+        </div>
+
+        <div class="professor-card">
+            <div class="professor-info">
+                <h3>Profa. Ana Santos</h3>
+                <p>Especialidade: <span class="specialty">Desenvolvimento Web Full Stack</span></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
