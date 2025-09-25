@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Te Orienta - Login Professor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #241f5c;
+      color: white;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .left {
+      width: 50%;
+    }
+    .left h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .left h1 span {
+      color: #ff5722;
+      margin-left: 5px;
+    }
+    .left p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    .left img {
+      width: 180px;
+      margin-top: 20px;
+    }
+    .form-box {
+      width: 40%;
+      background-color: #8496aa;
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+    }
+    .form-box h2 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .form-group input[type="password"] {
+      padding-right: 40px;
+    }
+    .btn {
+      background-color: white;
+      color: #241f5c;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #f0f0f0;
+    }
+    footer {
+      background-color: #f4511e;
+      height: 8px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <h1>te orienta<span>🎓</span></h1>
+      <p>
+        Mediamos as relações entre professores universitários capacitados e alunos 
+        que demandem orientação para o seu projeto de TCC. Te Orienta!
+      </p>
+      <img src="mascote.png" alt="Mascote Te Orienta">
+    </div>
+
+    <div class="form-box">
+      <h2>Cadastre-se:</h2>
+      <form>
+        <div class="form-group">
+          <label for="especializacao">Especialização:</label>
+          <input type="text" id="especializacao" name="especializacao" required>
+        </div>
+        <div class="form-group">
+          <label for="instituicao">Instituição:</label>
+          <input type="text" id="instituicao" name="instituicao" required>
+        </div>
+        <div class="form-group">
+          <label for="usuario">Usuário:</label>
+          <input type="text" id="usuario" name="usuario" required>
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required>
+        </div>
+        <button class="btn" type="submit">Acessar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+</html>
