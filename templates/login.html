@@ -90,6 +90,26 @@
       bottom: 0;
       width: 100%;
     }
+    .mascote-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .mascote-img {
+      width: 300px;
+      height: auto;
+    }
+    #id_username,
+    #id_password {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
@@ -101,29 +121,37 @@
         Mediamos as relações entre professores universitários capacitados e alunos 
         que demandem orientação para o seu projeto de TCC. Te Orienta!
       </p>
-      <img src="mascote.png" alt="Mascote Te Orienta">
+      {% load static %}
+
+      <div class="mascote-container">
+        <img src="{% static 'mascote.png' %}" alt="Mascote Te Orienta" class="mascote-img">
+      </div>
     </div>
 
     <div class="form-box">
-      <h2>Cadastre-se:</h2>
-      <form>
-        <div class="form-group">
-          <label for="especializacao">Especialização:</label>
-          <input type="text" id="especializacao" name="especializacao" required>
+
+      {% if form.errors %}
+        <p style="color: red;">Usuário ou senha incorretos. Tente novamente.</p>
+      {% endif %}
+
+      <h2>Login:</h2>
+      <form method="post">
+        {% csrf_token %}
+
+        <div class="form-group" >
+          <label for="especializacao">Usuário:</label>
+          {{ form.username }}
+          <!-- <input type="text" id="especializacao" name="especializacao" required> -->
         </div>
         <div class="form-group">
-          <label for="instituicao">Instituição:</label>
-          <input type="text" id="instituicao" name="instituicao" required>
+          <label for="instituicao">Senha:</label>
+          {{ form.password }}
+          <!-- <input type="text" id="instituicao" name="instituicao" required> -->
         </div>
-        <div class="form-group">
-          <label for="usuario">Usuário:</label>
-          <input type="text" id="usuario" name="usuario" required>
-        </div>
-        <div class="form-group">
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha" required>
-        </div>
-        <button class="btn" type="submit">Acessar</button>
+        {% if next %}
+          <input type="hidden" name="next" value="{{ next }}">
+        {% endif %}
+        <button class="btn" type="submit">Logar</button>
       </form>
     </div>
   </div>
