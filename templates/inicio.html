@@ -1,18 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Página Inicial</title>
+  <meta charset="UTF-8">
+  <title>Te Orienta - Página Inicial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+      text-align: center;
+    }
+    header {
+      background-color: #241f5c;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header h1 span {
+      color: #ff5722;
+      margin-left: 5px;
+    }
+    nav {
+      background-color: #9ca8bb;
+      padding: 10px 30px;
+      font-size: 14px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .carousel {
+      background: white;
+      margin: 30px auto;
+      width: 80%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .carousel img {
+      width: 100%;
+      display: block;
+    }
+    .carousel-caption-left,
+    .carousel-caption-right {
+      position: absolute;
+      top: 20px;
+      padding: 10px 15px;
+      background: #241f5c;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .carousel-caption-left {
+      left: 20px;
+    }
+    .carousel-caption-right {
+      right: 20px;
+    }
+    .buttons {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .buttons a {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #d84315;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo ao sistema!</h1>
-    <p>Essa é a página inicial estática.</p>
 
-    <h2>Links rápidos</h2>
-    <ul>
-        <li><a href="/conta/">Ir para Login</a></li>
-        <li><a href="/professor/">Ir para Professor</a></li>
-        <li><a href="/Aluno/">Ir para Aluno</a></li>
-    </ul>
+  <header>
+    <h1>te orienta<span>🎓</span></h1>
+  </header>
+
+  <nav>
+    <a href="#">Sobre a plataforma</a>
+    <a href="#">Ajuda</a>
+  </nav>
+
+  <div class="carousel">
+    <img src="sua-imagem.jpg" alt="Banner Te Orienta">
+    <div class="carousel-caption-left">SEM “TE ORIENTA”</div>
+    <div class="carousel-caption-right">COM “TE ORIENTA”</div>
+  </div>
+
+  <div class="buttons">
+    <a href="#">Sou Aluno</a>
+    <a href="#">Sou Professor</a>
+  </div>
+
 </body>
 </html>
