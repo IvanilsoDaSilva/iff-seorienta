@@ -94,7 +94,11 @@
 <body>
 
   <header>
-    <h1>te orienta<span>🎓</span></h1>
+    {% load static %}
+
+    <div class="mascote-container">
+      <img src="{% static 'logo-branco.png' %}" alt="logo-branco Te Orienta" class="" height="90px">
+    </div>
   </header>
 
   <nav>

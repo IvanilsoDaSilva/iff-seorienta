@@ -35,10 +35,6 @@
       line-height: 1.5;
       margin-bottom: 40px;
     }
-    .left img {
-      width: 180px;
-      margin-top: 20px;
-    }
     .form-box {
       width: 40%;
       background-color: #8496aa;
@@ -98,8 +94,10 @@
     }
 
     .mascote-img {
-      width: 300px;
       height: auto;
+      width: 180px;
+      margin-top: 20px;
+      margin-top: 20px;
     }
     #id_username,
     #id_password {
@@ -110,13 +108,22 @@
       font-size: 14px;
       box-sizing: border-box;
     }
+    .logo-img {
+      width: 100%;
+      max-width: 350px; /* ou o valor que preferir */
+      height: auto;
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <div class="left">
-      <h1>te orienta<span>🎓</span></h1>
+      {% load static %}
+
+      <div class="">
+        <img src="{% static 'logo-branco.png' %}" alt="logo-branco Te Orienta" class="logo-img" height="auto">
+      </div>
       <p>
         Mediamos as relações entre professores universitários capacitados e alunos 
         que demandem orientação para o seu projeto de TCC. Te Orienta!
